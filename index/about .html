@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Ajibade | Graphic Designer & Programmer</title>
+    <style>
+        /* Reset & Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { line-height: 1.6; color: #333; background: #f5f5f5; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Header / Hero */
+        header {
+            background: linear-gradient(to right, #4B0082, #6A5ACD);
+            color: white;
+            padding: 100px 20px 60px 20px;
+            text-align: center;
+        }
+        header h1 { font-size: 3rem; margin-bottom: 20px; }
+        header p { font-size: 1.2rem; margin-bottom: 30px; }
+        header .cta-btn {
+            background: #FFD700; color: #4B0082; padding: 15px 30px; border: none; border-radius: 50px;
+            cursor: pointer; font-weight: bold; transition: 0.3s;
+        }
+        header .cta-btn:hover { background: #FFC107; }
+
+        /* Sections */
+        section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+        h2 { font-size: 2rem; margin-bottom: 20px; text-align: center; color: #4B0082; }
+        p { text-align: center; margin-bottom: 20px; }
+
+        /* About */
+        .about { background: #fff; border-radius: 15px; padding: 40px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+
+        /* Skills */
+        .skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
+        .skill { background: #6A5ACD; color: white; padding: 20px; border-radius: 10px; width: 180px; text-align: center; }
+
+        /* Portfolio */
+        .portfolio { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+        .project { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .project:hover { transform: scale(1.05); }
+        .project img { width: 100%; display: block; }
+        .project h3 { padding: 15px; color: #4B0082; }
+
+        /* Contact */
+        .contact-form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+        .contact-form input, .contact-form textarea { padding: 15px; border-radius: 10px; border: 1px solid #ccc; width: 100%; }
+        .contact-form button { padding: 15px; border: none; border-radius: 50px; background: #4B0082; color: white; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .contact-form button:hover { background: #6A5ACD; }
+
+        /* Footer */
+        footer { text-align: center; padding: 30px 20px; background: #333; color: white; margin-top: 40px; }
+
+        @media(max-width:600px){
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1rem; }
+        }
+        .page ul { 
+          list-style-type: none;
+           padding: 0; 
+           margin: 10px 0;
+           display: flex;
+          flex-wrap: wrap; 
+           justify-content: center;
+           flex-direction: row;
+        gap: 30px;
+           text-decoration: none;
+           }
+           .page ul li a {
+            text-decoration: none;
+            color: #0f172a;
+            font-weight: bolder;
+           }
+           ul li .BRAND{
+            color: #370038;
+           }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Hi, I’m Emmanuel Ajibade</h1>
+        <p>Graphic Designer & System Programming Enthusiast | Crafting visuals and code with creativity and precision</p>
+        <button class="cta-btn" onclick="scrollToSection('about')">View My Work</button>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a creative, detail-oriented graphic designer and system programming enthusiast. I enjoy turning ideas into visually appealing designs while solving complex problems with logical solutions. I communicate clearly, respond thoughtfully, and strive for excellence in every project.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <a href="photoshop.html"><div class="skill">Photoshop </div> 
+            <a href="UI.html"><div class="skill">UI/UX Design </div> </a>
+            <a href="branding.html"><div class="skill"> Branding</div></a>
+            <a href="logo design.html"><div class="skill">Logo Creation</div></a>
+           <a href="SYSTEM.HTML"><div class="skill">System Programming</div></a> 
+          <a href="problem.html"> <div class="skill">Problem Solving</div></a> 
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio">
+            <div class="project">
+                <img src="https://via.placeholder.com/400x250" alt="Project 1">
+                <h3>Brand Identity for XYZ</h3>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/400x250" alt="Project 2">
+                <h3>Website UI Design for Startup</h3>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/400x250" alt="Project 3">
+                <h3>Social Media Campaign</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/f/meorolze" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            
+            <!-- Optional hidden field for subject -->
+            <input type="hidden" name="_subject" value="New Message from Portfolio Website">
+            
+            <!-- Optional redirect after submission -->
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+     <div class="page">
+      <ul>
+          <li ><a href="about .html" class="HOME"> Home-Page</a></li>
+          <li ><a href="photoshop.html" class="PS">PhotoShop-Page</a></li>
+          <li ><a href="UI.html" class="UI"> Ui/Ux Page</a> </li>
+          <li ><a href="branding.html" class="BRAND"> Branding - Page</a></li>
+          <li ><a href="logo design.html"class="LOGO"> Logo - page</a></li>
+          <li ><a href="SYSTEM.HTML" class="SYSYTEM">System programming page</a></li>
+      </ul>
+       </div>
+    <!-- Footer -->
+    <footer>
+        Designed & Developed by Emmanuel Ajibade | © 2025
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scroll function
+        function scrollToSection(sectionId){
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

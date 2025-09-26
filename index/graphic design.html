@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Graphic Design — Emmanuel Ajibade</title>
+  <style>
+    :root{
+      --purple:#6b21a8;
+      --blue:#2563eb;
+      --muted:#6b7280;
+      --card-bg:#ffffff;
+      --radius:16px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f8fafc;color:#0f172a;line-height:1.5}
+    header{background:linear-gradient(90deg,var(--purple),var(--blue));color:#fff;padding:56px 20px;text-align:center}
+    header h1{font-size:2.2rem;margin-bottom:12px}
+    header p{max-width:720px;margin:0 auto 18px;color:rgba(255,255,255,0.92)}
+    header .cta{background:#fff;color:var(--purple);padding:12px 20px;border-radius:999px;font-weight:600;border:none;cursor:pointer}
+    main{max-width:1100px;margin:32px auto;padding:0 20px}
+    section{padding:36px 0}
+    h2{text-align:center;font-size:1.6rem;margin-bottom:20px}
+    .grid{display:grid;gap:20px}
+    .two-col{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .three-col{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--card-bg);padding:20px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+    .about img{width:100%;height:320px;object-fit:cover;border-radius:12px}
+    /* Portfolio gallery */
+    .gallery{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .gallery img{width:100%;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);object-fit:cover;height:200px}
+    /* Contact form */ 
+    .contact-wrap{max-width:800px;margin:0 auto}
+    form{display:flex;flex-direction:column;gap:12px}
+    label{font-size:.9rem}
+    input[type=text],textarea{padding:10px;border-radius:10px;border:1px solid #ddd;font-size:.95rem}
+    textarea{min-height:140px;resize:vertical}
+    .btn{background:linear-gradient(90deg,var(--purple),var(--blue));color:#fff;border:none;padding:10px 16px;border-radius:999px;font-weight:600;cursor:pointer}
+    .msg{display:none;margin-top:6px;padding:10px;border-radius:8px;font-size:.9rem}
+    .msg.success{background:#ecfdf5;color:#065f46;display:block}
+    .msg.error{background:#fffbeb;color:#854d0e;display:block}
+    footer{text-align:center;margin:40px 0;color:var(--muted);font-size:.9rem}
+    @media(max-width:600px){.about img{height:220px}}
+
+     /* Contact */
+        .contact-form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+        .contact-form input, .contact-form textarea { padding: 15px; border-radius: 10px; border: 1px solid #ccc; width: 100%; }
+        .contact-form button { padding: 15px; border: none; border-radius: 50px; background: #4B0082; color: white; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .contact-form button:hover { background: #6A5ACD; }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Graphic Design</h1>
+    <p>Exploring the art of visual communication, branding, and creativity. Learn what graphic design is, why it’s important, and how I use it to create impact.</p>
+    <button class="cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+  </header>
+
+  <main>
+    <!-- What is Graphic Design -->
+    <section>
+      <h2>What is Graphic Design?</h2>
+      <div class="grid two-col">
+        <div class="card">
+          <h3>Definition</h3>
+          <p>Graphic Design is the practice of creating visual content to communicate messages. Using typography, imagery, color, and layout, graphic design blends art and technology to inspire and inform.</p>
+        </div>
+        <div class="card">
+          <h3>Importance</h3>
+          <p>From branding to advertising, graphic design shapes perception. It helps businesses stand out, tells stories visually, and ensures messages are clear and memorable.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about">
+      <h2>About Me</h2>
+      <div class="grid two-col" style="align-items:center">
+        <!-- Profile picture updated -->
+        <img src="pass.jpg" alt="Graphic Designer - Emmanuel Ajibade">
+        <div class="card">
+          <h3>Emmanuel Ajibade</h3>
+          <p>I am a <strong>Graphic Designer</strong> passionate about creating designs that balance beauty with function. I focus on branding, layouts, and creative visuals that connect deeply with audiences.</p>
+          <p>With a year of hands-on experience, I strive to continuously grow, merging design with future tech skills like UI/UX and programming.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skills -->
+    <section>
+      <h2>My Graphic Design Skills</h2>
+      <div class="grid three-col">
+        <div class="card"><h3>Branding</h3><p>Logos, visual identities, and brand consistency across platforms.</p></div>
+        <div class="card"><h3>Layout Design</h3><p>Posters, flyers, magazines, and creative print/digital layouts.</p></div>
+        <div class="card"><h3>Digital Design</h3><p>Social media graphics, banners, and engaging online visuals.</p></div>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section>
+      <h2>Portfolio</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/400x300?text=Logo+Design" alt="Logo Design">
+        <img src="https://via.placeholder.com/400x300?text=Poster+Design" alt="Poster Design">
+        <img src="https://via.placeholder.com/400x300?text=Brand+Identity" alt="Brand Identity">
+        <img src="https://via.placeholder.com/400x300?text=Social+Media+Graphic" alt="Social Media Graphic">
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-wrap">
+        <form id="contactForm" action="https://formspree.io/f/meorolze" method="POST">
+          <!-- fixed email hidden -->
+          <input type="hidden" name="email" value="aduraemmanuel123@gmail.com">
+          
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+          
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
+          
+          <button type="submit" class="btn">Send Message</button>
+          <div id="formMsg" class="msg"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> Emmanuel Ajibade — Graphic Design Portfolio</footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const form=document.getElementById('contactForm');const msgBox=document.getElementById('formMsg');
+    form.addEventListener('submit',async(e)=>{e.preventDefault();
+      const formData=new FormData(form);
+      try{const res=await fetch(form.action,{method:'POST',headers:{'Accept':'application/json'},body:formData});
+        if(res.ok){msgBox.className='msg success';msgBox.textContent='✅ Message sent successfully!';form.reset();}
+        else{msgBox.className='msg error';msgBox.textContent='⚠️ Failed to send message.';}
+      }catch(err){msgBox.className='msg error';msgBox.textContent='⚠️ Network error.';}
+    });
+  </script>
+</body>
+</html>

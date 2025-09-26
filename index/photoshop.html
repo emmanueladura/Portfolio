@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adobe Photoshop — Emmanuel Ajibade</title>
+  <style>
+    :root{
+      --purple:#6b21a8;
+      --blue:#2563eb;
+      --muted:#6b7280;
+      --card-bg:#ffffff;
+      --radius:16px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f8fafc;color:#0f172a;line-height:1.5}
+    header{background:linear-gradient(90deg,var(--purple),var(--blue));color:#fff;padding:56px 20px;text-align:center}
+    header h1{font-size:2.2rem;margin-bottom:12px}
+    header p{max-width:720px;margin:0 auto 18px;color:rgba(255,255,255,0.92)}
+    header .cta{background:#fff;color:var(--purple);padding:12px 20px;border-radius:999px;font-weight:600;border:none;cursor:pointer}
+    main{max-width:1100px;margin:32px auto;padding:0 20px}
+    section{padding:36px 0}
+    h2{text-align:center;font-size:1.6rem;margin-bottom:20px}
+    .grid{display:grid;gap:20px}
+    .two-col{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .three-col{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--card-bg);padding:20px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+    .gallery{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .gallery img{width:100%;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);object-fit:cover;height:200px}
+    footer{text-align:center;margin:40px 0;color:var(--muted);font-size:.9rem}
+
+     /* Contact */
+        .contact-form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+        .contact-form input, .contact-form textarea { padding: 15px; border-radius: 10px; border: 1px solid #ccc; width: 100%; }
+        .contact-form button { padding: 15px; border: none; border-radius: 50px; background: #4B0082; color: white; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .contact-form button:hover { background: #6A5ACD; }
+
+         .page ul { 
+          list-style-type: none;
+           padding: 0; 
+           margin: 10px 0;
+           display: flex;
+          flex-wrap: wrap; 
+           justify-content: center;
+           flex-direction: row;
+      gap: 30px;
+           text-decoration: none;
+           }
+           .page ul li a {
+            text-decoration: none;
+            color: #0f172a;
+            font-weight: bolder;
+           }
+           ul li .BRAND{
+            color: #370038;
+           }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adobe Photoshop</h1>
+    <p>The world’s leading image editing and graphic design software. Photoshop is a creative powerhouse used by designers, photographers, and artists globally.</p>
+    <button class="cta" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Explore Features</button>
+  </header>
+
+  <main>
+    <!-- History -->
+    <section>
+      <h2>History of Photoshop</h2>
+      <div class="grid two-col">
+        <div class="card">
+          <h3>Early Beginnings</h3>
+          <p>Photoshop was created in 1987 by Thomas and John Knoll. Originally a simple image editing program, it was licensed to Adobe Systems in 1988 and officially released as Photoshop 1.0 in 1990.</p>
+        </div>
+        <div class="card">
+          <h3>Growth & Evolution</h3>
+          <p>Over the decades, Photoshop evolved from a photo editing tool into a complete design ecosystem. Each version introduced powerful tools like layers, masks, smart objects, and filters.</p>
+        </div>
+        <div class="card">
+          <h3>Modern Photoshop</h3>
+          <p>Today, Photoshop is integrated with Adobe Creative Cloud, offering AI-powered features, cloud storage, and seamless collaboration. It remains the industry standard for visual creativity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <h2>Key Features of Photoshop</h2>
+      <div class="grid three-col">
+        <div class="card"><h3>Layers</h3><p>Work non-destructively with multiple elements stacked in layers.</p></div>
+        <div class="card"><h3>Selection Tools</h3><p>Magic Wand, Pen Tool, and advanced selections for precise editing.</p></div>
+        <div class="card"><h3>Retouching</h3><p>Healing brush, clone stamp, and AI tools for photo enhancement.</p></div>
+        <div class="card"><h3>Typography</h3><p>Custom text effects, typography design, and font integration.</p></div>
+        <div class="card"><h3>Digital Art</h3><p>Brushes, painting tools, and blending for digital illustration.</p></div>
+        <div class="card"><h3>3D & Effects</h3><p>Create 3D text, lighting, and apply countless filters & effects.</p></div>
+      </div>
+    </section>
+
+    <!-- How I Use Photoshop -->
+    <section>
+      <h2>How I Use Photoshop</h2>
+      <div class="grid two-col">
+        <div class="card">
+          <p>As a graphic designer, Photoshop is my go-to tool for:</p>
+          <ul>
+            <li>Designing logos and brand assets</li>
+            <li>Editing and enhancing photographs</li>
+            <li>Creating posters, flyers, and social media graphics</li>
+            <li>Experimenting with digital art and visual concepts</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p>It allows me to combine creativity with precision, delivering designs that are professional, flexible, and impactful. My workflow blends Photoshop with other tools like Illustrator and UI/UX design software.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Example Gallery -->
+    <section>
+      <h2>Photoshop Works</h2>
+      <div class="gallery">
+        <img src="editing.jpg" alt="Photo Retouching Example">
+        <img src="ROCKY BITE.jpg" alt="Poster Design Example">
+        <img src="20DAYS.jpg" alt="Social Media Banner Example">
+        <img src="pass.jpg" alt="Digital Art Example">
+      </div>
+    </section>
+
+
+     <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/f/meorolze" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            
+            <!-- Optional hidden field for subject -->
+            <input type="hidden" name="_subject" value="New Message from Portfolio Website">
+            
+            <!-- Optional redirect after submission -->
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+     <div class="page">
+      <ul>
+          <li ><a href="about .html" class="HOME"> Home-Page</a></li>
+          <li ><a href="photoshop.html" class="PS">PhotoShop-Page</a></li>
+          <li ><a href="UI.html" class="UI"> Ui/Ux Page</a> </li>
+          <li ><a href="branding.html" class="BRAND"> Branding - Page</a></li>
+          <li ><a href="logo design.html"class="LOGO"> Logo - page</a></li>
+          <li ><a href="SYSTEM.HTML" class="SYSYTEM">System programming page</a></li>
+      </ul>
+       </div>
+    <footer>© <span id="year"></span> Emmanuel Ajibade — Adobe Photoshop Page</footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>

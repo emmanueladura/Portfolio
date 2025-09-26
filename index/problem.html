@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Problem Solving — Emmanuel Ajibade</title>
+  <style>
+    :root{
+      --purple:#6b21a8;
+      --blue:#2563eb;
+      --muted:#6b7280;
+      --card-bg:#ffffff;
+      --radius:16px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#f8fafc;color:#0f172a;line-height:1.5}
+    header{background:linear-gradient(90deg,var(--purple),var(--blue));color:#fff;padding:56px 20px;text-align:center}
+    header h1{font-size:2.2rem;margin-bottom:12px}
+    header p{max-width:720px;margin:0 auto 18px;color:rgba(255,255,255,0.92)}
+    header .cta{background:#fff;color:var(--purple);padding:12px 20px;border-radius:999px;font-weight:600;border:none;cursor:pointer}
+    main{max-width:1100px;margin:32px auto;padding:0 20px}
+    section{padding:36px 0}
+    h2{text-align:center;font-size:1.6rem;margin-bottom:20px}
+    .grid{display:grid;gap:20px}
+    .two-col{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .three-col{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--card-bg);padding:20px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+    footer{text-align:center;margin:40px 0;color:var(--muted);font-size:.9rem}
+
+     /* Contact */
+        .contact-form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+        .contact-form input, .contact-form textarea { padding: 15px; border-radius: 10px; border: 1px solid #ccc; width: 100%; }
+        .contact-form button { padding: 15px; border: none; border-radius: 50px; background: #4B0082; color: white; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .contact-form button:hover { background: #6A5ACD; }
+        
+
+         .page ul { 
+          list-style-type: none;
+           padding: 0; 
+           margin: 10px 0;
+           display: flex;
+          flex-wrap: wrap; 
+           justify-content: center;
+           flex-direction: row;
+           gap: 10px;
+           text-decoration: none;
+           }
+           .page ul li a {
+            text-decoration: none;
+            color: #0f172a;
+            font-weight: bolder;
+           }
+           ul li .BRAND{
+            color: #370038;
+           }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Problem Solving</h1>
+    <p>Problem solving is the ability to identify challenges, analyze them, and create effective solutions. It is a critical skill for design, innovation, and everyday life.</p>
+    <button class="cta" onclick="document.getElementById('steps').scrollIntoView({behavior:'smooth'})">See Steps</button>
+  </header>
+
+  <main>
+    <!-- What is Problem Solving -->
+    <section>
+      <h2>What is Problem Solving?</h2>
+      <div class="grid two-col">
+        <div class="card">
+          <h3>Definition</h3>
+          <p>Problem solving is a process of using critical thinking, creativity, and analysis to overcome challenges. It combines logical reasoning with innovative approaches to achieve results.</p>
+        </div>
+        <div class="card">
+          <h3>Importance</h3>
+          <p>Strong problem-solving skills allow individuals and businesses to adapt, innovate, and remain competitive. It helps turn obstacles into opportunities and drives growth.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steps of Problem Solving -->
+    <section id="steps">
+      <h2>Steps in Problem Solving</h2>
+      <div class="grid three-col">
+        <div class="card"><h3>1. Identify the Problem</h3><p>Understand the issue clearly by gathering facts and defining the challenge.</p></div>
+        <div class="card"><h3>2. Analyze</h3><p>Break down the problem into smaller parts, look for patterns, and explore possible causes.</p></div>
+        <div class="card"><h3>3. Generate Ideas</h3><p>Brainstorm multiple solutions using creativity, design thinking, or research.</p></div>
+        <div class="card"><h3>4. Select a Solution</h3><p>Evaluate all options and choose the most practical, effective, and sustainable solution.</p></div>
+        <div class="card"><h3>5. Implement</h3><p>Put the chosen solution into action and monitor progress.</p></div>
+        <div class="card"><h3>6. Evaluate</h3><p>Review results, measure success, and make improvements if necessary.</p></div>
+      </div>
+    </section>
+
+    <!-- My Approach -->
+    <section>
+      <h2>My Approach to Problem Solving</h2>
+      <div class="grid two-col">
+        <div class="card">
+          <p>As a designer, I approach problem solving by combining **creative thinking** with **analytical methods**. I research deeply, define the challenge, and use brainstorming techniques to find unique ideas.</p>
+        </div>
+        <div class="card">
+          <p>I also test and refine solutions through feedback and iteration. This ensures that my final design is not just visually appealing, but also solves real problems effectively.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="page">
+      <ul>
+          <li ><a href="about .html" class="HOME"> Home-Page</a></li>
+          <li ><a href="photoshop.html" class="PS">PhotoShop-Page</a></li>
+          <li ><a href="UI.html" class="UI"> Ui/Ux Page</a> </li>
+          <li ><a href="branding.html" class="BRAND"> Branding - Page</a></li>
+          <li ><a href="logo design.html"class="LOGO"> Logo - page</a></li>
+          <li ><a href="SYSTEM.HTML" class="SYSYTEM">System programming page</a></li>
+      </ul>
+       </div>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/f/meorolze" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            
+            <!-- Optional hidden field for subject -->
+            <input type="hidden" name="_subject" value="New Message from Portfolio Website">
+            
+            <!-- Optional redirect after submission -->
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>© <span id="year"></span> Emmanuel Ajibade — Problem Solving Page</footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
